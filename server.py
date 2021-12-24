@@ -9,8 +9,6 @@ tcp = ServerTCP(terminal)
 udp = ServerUDP(terminal)
 terminal.setServer(tcp)
 
-print(socket.gethostbyname(socket.gethostname()))
-
 def start():
     udp.start()
 
