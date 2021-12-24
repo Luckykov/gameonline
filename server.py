@@ -2,11 +2,14 @@ from serverTCP import *
 from serverUDP import *
 import threading
 from terminal import Terminal
+import socket
 
 terminal = Terminal()
 tcp = ServerTCP(terminal)
 udp = ServerUDP(terminal)
 terminal.setServer(tcp)
+
+print(socket.gethostbyname(socket.gethostname()))
 
 def start():
     udp.start()
