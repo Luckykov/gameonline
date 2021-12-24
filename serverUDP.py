@@ -4,7 +4,7 @@ import time
 
 class ServerUDP:
 	def __init__(self, terminal):
-		self.host = "26.111.238.153"
+		self.host = "127.0.0.1"
 		self.port = 7172
 		self.buffersize = 1024
 		self.connectionLossTimeout = 5.0
